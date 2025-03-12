@@ -1,40 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🚀 SolanaWalletApp
 
-## Getting Started
+A **Next.js + React** frontend application for interacting with the **Solana blockchain**. This app allows users to connect their Solana wallet, check balances, and interact with on-chain programs seamlessly.
 
-First, run the development server:
+## 📌 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 🔑 **Wallet Connection** – Connect with Solana wallets (e.g., Phantom, Solflare).
+- 💰 **Balance Display** – Fetch and display the SOL balance of a connected account.
+- 🔄 **Transaction Handling** – Send and receive transactions securely.
+- ⚡ **Optimized UI** – Built with Next.js for fast performance and SEO-friendly rendering.
+
+---
+
+## 🛠️ Installation & Setup
+
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/dehghanialif/SolanaWalletApp.git
+cd SolanaWalletApp
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **2️⃣ Install Dependencies**
+```sh
+npm install
+# OR
+yarn install
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<!-- ### **3️⃣ Set Up Environment Variables**
+Create a `.env.local` file and add the required environment variables:
+```ini
+NEXT_PUBLIC_SOLANA_NETWORK=mainnet-beta
+NEXT_PUBLIC_RPC_URL=https://api.mainnet-beta.solana.com
+``` -->
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<!-- ### **4️⃣ Run the Application** -->
+### **3️⃣ Run the Application**
+```sh
+npm run dev
+# OR
+yarn dev
+```
+The app will be available at **http://localhost:3000**.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Deployment
 
-## Learn More
+This project is ready for deployment on **Vercel, Netlify, Cloudflare Pages**, or any static hosting platform.
 
-To learn more about Next.js, take a look at the following resources:
+To deploy using **Vercel**:
+```sh
+vercel
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📂 Project Structure
 
-## Deploy on Vercel
+```
+SolanaWalletApp/
+│-- public/             # Static assets (images, icons, etc.)
+│-- src/
+│   │-- components/      # Reusable UI components
+│   │-- pages/          # Next.js pages (e.g., index.tsx, _app.tsx)
+│   │-- utils/          # Utility functions
+│-- styles/             # Global styles
+│-- .env.local          # Environment variables (not included in repo)
+│-- package.json        # Project dependencies
+│-- README.md           # Project documentation
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions are welcome! To contribute:
+
+1. **Fork** this repository.
+2. **Create a branch** for your feature:
+   ```sh
+   git checkout -b feature/new-feature
+   ```
+3. **Commit your changes**:
+   ```sh
+   git commit -m "feat: added new feature"
+   ```
+4. **Push to GitHub**:
+   ```sh
+   git push origin feature/new-feature
+   ```
+5. **Create a Pull Request** and describe your changes.
+
+---
+
+## 🛡️ License
+
+This project is **open-source** and licensed under the **MIT License**.
+
+---
+
+## 📞 Contact
+
+- **GitHub**: [@dehghanialif](https://github.com/dehghanialif)
+- **Issues**: [Submit a bug report](https://github.com/dehghanialif/SolanaWalletApp/issues)
