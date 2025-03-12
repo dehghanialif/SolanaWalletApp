@@ -21,7 +21,13 @@ export const BalanceDisplay: FC = () => {
         );
 
         connection.getAccountInfo(publicKey).then(info => {
-            setBalance(info.lamports);
+            if (info) {
+                setBalance(info.lamports);
+            } else {
+                setBalance(0); // Default to 0 if account doesn't exist
+            }
+        }).catch(error => {
+            console.log("Failed to fetch account info:", error);
         });
     }, [connection, publicKey]);
 
